@@ -35,6 +35,8 @@ plugins:
   
 theme: jekyll-theme-modernist
 
+show_downloads: false
+
 paginate: 5
 paginate_path: "/posts/page:num/"
 
