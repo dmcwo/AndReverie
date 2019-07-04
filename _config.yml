@@ -1,1 +1,4 @@
 theme: jekyll-theme-merlot
+
+paginate: 5
+paginate_path: "/posts/page:num/"
