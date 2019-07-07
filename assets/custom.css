@@ -1,4 +1,4 @@
-/* leads and blockquotes border-radius: 25px 25px 55px 5px/5px 55px 25px 25px; */
+/* leads and blockquotes */
 .lead {
   font-size: 1.5rem;
   font-weight: 200;
@@ -23,6 +23,7 @@
   margin: 1.5em 0;
   position: relative;
   background-color: white;
+    text-align: left;
 }
 .blockquote:before {
   content: '\201C';
@@ -30,13 +31,14 @@
   top: 0em;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  /* background: #fff; */
   width: 3rem;
   height: 2rem;
   font: 6em/1.08em 'PT Sans', sans-serif;
-  color: #666;
+  color: black;
   text-align: center;
 }
+
 /*
 .blockquote:after {
   content: "\2013 \2003" attr(cite);
@@ -47,13 +49,14 @@
 }
 */
 
+
 /* masthead */
 .masthead {
   height: 100vh;
   min-height: 500px;
   /* background-image: url('https://source.unsplash.com/_4815u_ACqQ/1920x1080'); */
     /* https://source.unsplash.com/BtbjCFUvBXs/1920x1080 */
-  / * background-color: #EB6864; */
+  background-color: #EB6864;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

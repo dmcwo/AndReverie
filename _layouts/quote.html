@@ -5,11 +5,18 @@ layout: default
 <header class="masthead">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <blockquote class="blockquote">{{ page.quote }}</blockquote>
-    <cite>{{ page.author }}, {{ page.title }}</cite>
-    <p>{{ page.worldcat }}</p>
+      <div class="col-12 text-center" style="background-color: white; border-radius: 5px; ">
+        <blockquote class="blockquote">{{ page.quote }}
+            <p class="text-right mt-3"><cite>{{ page.author }}, <a href="{{ page.worldcat }}" target="_blank">{{ page.title }}</a></cite></p>
+          </blockquote>
+          <!--<cite>{{ page.author }}, <a href="{{ page.worldcat }}" target="_blank">{{ page.title }}</a></cite>-->
       </div>
+
+    <div class="col-12 mx-auto text-center">
+        <a class="btn btn-primary mx-auto" href="{{ '/' | absolute_url }}"><i class="fas fa-home" aria-hidden="true"></i> home</a>
+        <a class="btn btn-primary mx-auto" href="{{ '/quotes' | absolute_url }}"><i class="fas fa-quote-left" aria-hidden="true"></i> more quotes</a>
+    </div>
+
     </div>
   </div>
 </header>

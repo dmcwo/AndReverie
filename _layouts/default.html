@@ -6,7 +6,9 @@
 
   <body>
       
-     {% include navbar.html %}
+     {% unless page.lownav %}
+      {% include navbar.html %}
+     {% endunless %}
 
     {{ content }}
       
